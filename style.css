@@ -86,7 +86,7 @@ body {
     }
 
     .header {
-       height: 115px;
+       height: 70px;
        background-color: #4682b4;
        box-shadow: 0px 2px 5px 2px rgb(61, 59, 59);
     }
@@ -104,11 +104,11 @@ body {
         background-color:rgb(59, 58, 58);
         position: fixed;
         left: 30px;
-        top: 110px;
+        top: 70px;
         width: 100%;
         padding: 30px 0;
 
-        height: calc(100% - 150px);
+        height: calc(100% - 500px);
         overflow-y: auto;
 
         left: 100%;
@@ -127,7 +127,7 @@ body {
 
     .nav-tooggle {
         display: block;
-        height: 115px;
+        height: 70px;
         background-color: #4682b4;
     }
 
@@ -150,7 +150,6 @@ body {
     border-radius: 10px 10px 10px 10px;
     width: 500px;
     height: 350px;
-
 }
 
 .text-perfil {
@@ -282,7 +281,6 @@ span, a, a:hover {
     justify-content: center;
     column-gap: 40px;
     padding-top: 10px;
-
 }
 
 .proyect-repos {
@@ -301,10 +299,16 @@ span, a, a:hover {
         display: flex;
         justify-content: center; 
     }
-   
-    .proyect-repos {
+
+    .proyect-repo {
         display: flex;
         flex-direction: column;
+        padding-left: 30PX;
+        column-gap: 40px;
+        padding-top: 10px;
+    }
+   
+    .proyect-repos {
         width: 250px;
         height: 150px;
         margin: 25px;
@@ -404,7 +408,61 @@ span, a, a:hover {
     font-size: 15px;
     color: rgb(119, 119, 126);
     padding-top: 15PX;
- }
+}
+
+@media (max-width: 768px){
+    .container-tittle {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-conten {
+        display: flex;
+        padding-left: 60PX;
+        flex-direction: column;
+        row-gap: 50px;  
+    }
+     
+    .contact-tajet {
+        width: 200px;
+        height: 220px;
+        background-color: white;
+        border-radius: 5px 5px 5px 5px;
+        column-gap: 40px;
+    }
+     
+    .contact-icon {
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        height: 120px;
+        border: 20px;
+        padding: 30px;
+        margin: 25px;
+    }
+     
+    .linea {
+        border-top: 1px solid rgb(85, 83, 83);
+        height: 1px;
+        max-width: 200px;
+        padding: 0;
+        margin: 20px auto 0 auto;
+    }
+     
+    .gmail {
+        margin-left: 10px;
+        font-size: 15px;
+        color: rgb(119, 119, 126);
+        padding-top: 15PX;
+    }
+     
+    .phone {
+        margin-left: 35px;
+        font-size: 15px;
+        color: rgb(119, 119, 126);
+        padding-top: 15PX;
+    }
+}
 
 .footer {
     display: flex;
@@ -426,11 +484,16 @@ span, a, a:hover {
 }
 
 @media (max-width: 768px){
+    .social {
+        background-color: rgb(208, 226, 238);
+        height: 150px;
+        width: 100%;
+    }
+
     .footer {
         display: flex;
         flex-direction: column;
-        margin: 10px;
-        padding: 30px;  
+        margin: 0px;  
         font-size: 16px;
         line-height: 2;
     }
@@ -438,7 +501,7 @@ span, a, a:hover {
     .copyright {
         display: grid;
         background-color:  rgb(129, 134, 136);
-        padding: 40px;
+        padding: 25px;
         color: white;
         font-size: 18px;
     }
